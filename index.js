@@ -12,7 +12,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
     cors:{
-        origin:"https://livechatapp.adaptable.app",
+        origin:"https://chatlive.adaptable.app",
         methods:["GET","POST"]
     }
 })
