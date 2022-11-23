@@ -6,7 +6,9 @@ const http = require("http");
 const cors = require("cors");
 const port = process.env.PORT || 8000;
 const app = express();
-app.use(cors());
+app.use(cors({
+    methods:['GET','POST'],
+}));
 
 const server = http.createServer(app);
 
